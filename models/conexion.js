@@ -9,7 +9,7 @@ var Pool = require('pg-pool');
 };*/
 var config = {
     user: 'cris',
-    database: 'db_servicio_vkar',
+    database: 'db_taller',
     password: 'aCAwjGFnPdjmIIVKcHESL9oufzoiuHri',
     host: 'dpg-cr6javaj1k6c73d593fg-a.oregon-postgres.render.com',
     port: 5432,
