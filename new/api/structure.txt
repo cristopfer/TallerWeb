@@ -1,0 +1,7 @@
+controllers/: Contiene la lógica de negocio y controladores.
+models/: Contiene los modelos de datos.
+routes/: Define las rutas de la API.
+middlewares/: Contiene middlewares personalizados.
+config/: Configuraciones como la conexión a la base de datos.
+app.js: Configuración de la aplicación Express.
+server.js: Punto de entrada del servidor.
