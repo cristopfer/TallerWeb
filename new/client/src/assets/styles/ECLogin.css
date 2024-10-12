@@ -44,7 +44,7 @@
     color: #fff;
     font-size: 1rem;
     text-decoration: none;
-    background-color: #0066cc;
+    background-color: #3869EB;
     padding: 0.5rem 1rem;
     border-radius: 5px;
   }
@@ -104,7 +104,7 @@
   .ec-login-button {
     width: 100%;
     padding: 0.75rem;
-    background-color: #003366;
+    background-color: #3869EB;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -116,7 +116,12 @@
   .ec-login-button:hover {
     background-color: #002244;
   }
-  
+  .ec-register-link {
+    color: #ff8682;
+  }
+  .ec-forgot-password-link {
+    color: #ff8682;
+  }
   /* Error Message Styles */
   .ec-error-message {
     color: #ff4d4d;

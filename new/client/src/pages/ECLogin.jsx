@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import logo from '../assets/images/EduConnectLogo.png';
-import facebookIcon from '../assets/images/facebook.png';
-import githubIcon from '../assets/images/github.png';
-import youtubeIcon from '../assets/images/youtube.png';
+import logo from '../assets/images/LogoSin 1.svg';
+import facebookIcon from '../assets/images/Vector (1).svg';
+import githubIcon from '../assets/images/Vector (2).svg';
+import youtubeIcon from '../assets/images/Vector.svg';
 import '../assets/styles/ECLogin.css';
 
 function ECLogin() {
@@ -111,7 +111,7 @@ function ECLogin() {
             </div>
           </div>
         </div>
-        <p>&copy; 2024 EduConnect03</p>
+        <p>&copy; 2024 EduConnectG3</p>
       </footer>
     </div>
   );
