@@ -1,0 +1,8 @@
+public/: Contiene archivos estáticos como index.html.
+src/: Contiene todo el código fuente de React.
+assets/: Archivos estáticos como imágenes y estilos.
+components/: Componentes reutilizables.
+pages/: Componentes de página.
+services/: Servicios para interactuar con la API.
+App.js: Componente principal de la aplicación.
+index.js: Punto de entrada de la aplicación.
