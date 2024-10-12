@@ -1,0 +1,183 @@
+/* General Styles */
+.ec-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f7fa;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Header Styles */
+  .ec-header {
+    width: 100%;
+    background-color: #003366;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .ec-logo-title,
+  .ec-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ec-logo {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .ec-logo-image img {
+    height: 50px;
+    margin-right: 0.5rem;
+  }
+  
+  .ec-logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .ec-nav .ec-register-link {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #0066cc;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  .ec-register-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Login Section Styles */
+  .ec-login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+  }
+  
+  .ec-login-panel {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .ec-panel-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #003366;
+  }
+  
+  .ec-panel-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Form Input Styles */
+  .ec-input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .ec-input:focus {
+    border-color: #003366;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 51, 102, 0.3);
+  }
+  
+  /* Button Styles */
+  .ec-login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ec-login-button:hover {
+    background-color: #002244;
+  }
+  
+  /* Error Message Styles */
+  .ec-error-message {
+    color: #ff4d4d;
+    background-color: #ffe6e6;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Footer Styles */
+  .ec-footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.875rem;
+  }
+  
+  .ec-footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .ec-footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ec-footer-section h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .ec-footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+  }
+  
+  .ec-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .ec-social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .ec-social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .ec-footer p {
+    margin-top: 1rem;
+  }
+  
