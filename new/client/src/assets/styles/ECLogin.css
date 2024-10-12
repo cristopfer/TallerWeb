@@ -44,6 +44,9 @@
     color: #fff;
     font-size: 1rem;
     text-decoration: none;
+    background-color: #0066cc;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
   }
   
   .ec-register-link:hover {
@@ -132,15 +135,49 @@
     padding: 1rem 2rem;
     text-align: center;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
     font-size: 0.875rem;
+  }
+  
+  .ec-footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .ec-footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ec-footer-section h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
   }
   
   .ec-footer a {
     color: #fff;
     text-decoration: none;
+    margin-bottom: 0.5rem;
   }
   
   .ec-footer a:hover {
     text-decoration: underline;
+  }
+  
+  .ec-social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .ec-social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .ec-footer p {
+    margin-top: 1rem;
   }
   

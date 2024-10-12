@@ -6,7 +6,6 @@ import githubIcon from '../assets/images/github.png';
 import youtubeIcon from '../assets/images/youtube.png';
 import '../assets/styles/ECLogin.css';
 
-
 function ECLogin() {
   const [credentials, setCredentials] = useState({ username: '', password: '' });
   const [error, setError] = useState('');
@@ -49,9 +48,7 @@ function ECLogin() {
           </a>
         </div>
         <nav className="ec-nav">
-          <a href="/register" className="ec-register-link">
-            <i className="bi bi-person-fill"></i> Registrarse
-          </a>
+          <a href="/register" className="ec-register-link">Registrarse</a>
         </nav>
       </header>
 
