@@ -1,13 +1,3 @@
-import React from 'react';
-<<<<<<< HEAD
-import ECLogin from './pages/ECLogin';
-
-function App() {
-  return (
-    <div className="App">
-      <ECLogin />
-    </div>
-=======
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ECLogin from './pages/ECLogin';
 import ECHome from './pages/ECHome';
@@ -25,7 +15,7 @@ function App() {
         </Routes>
       </div>
     </Router>
->>>>>>> eysenDev
+
   );
 }
 
