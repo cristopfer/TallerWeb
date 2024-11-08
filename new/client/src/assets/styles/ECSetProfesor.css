@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  height: 100%;
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #1d2b64;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.settings-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.account-settings {
+  width: 95%;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.account-settings h2 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.account-settings form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.account-settings input, textarea {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  padding-left: 20px;
+}
+
+.notifications-settings,
+.password-change {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.notifications-settings form,
+.password-change form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.right-section {
+  display: flex;
+  padding: 50px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+button {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.butSettings {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.butLogout {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.headerSet {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.headerSet input {
+  padding: 10px;
+  height: 60%;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+footer {
+  background-color: #007bff00;
+}
+
+.userIcon {
+  height: 50%;
+  width: auto;
+}
+
+.jorgeIpanaque {
+  display: flex;
+  justify-content: center;
+}
