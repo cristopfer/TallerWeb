@@ -23,7 +23,9 @@ const Home = () => {
           </a>
         </div>
         <div>
-          <button>Registrarse</button>
+          <Link to="/registro">
+            <button>Registrarse</button>
+          </Link>
           <Link to="/login">
             <button>Iniciar Sesión</button>
           </Link>

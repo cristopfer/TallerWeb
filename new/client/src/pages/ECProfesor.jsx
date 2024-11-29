@@ -1,4 +1,6 @@
 import React from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 import '../assets/styles/ECProfesor.css'; 
 import logo from '../assets/images/LogoSin 1.svg';
 import icono1 from '../assets/images/1.png';
@@ -14,7 +16,22 @@ import grafico2 from '../assets/images/10.png';
 import grafico3 from '../assets/images/11.png';
 import grafico4 from '../assets/images/12.png';
 
+const estado ={};
+const handleChange = () => {
+  window.location.href = '/curso';
+};
+
+try {
+  const response = await axios.post('http://localhost:8000/api/usuario/logueo', {
+    withCredentials: true, 
+  });
+  estado = response.data;
+} catch (error) {
+  console.error('Error de logueo:', error);
+}
+
 const Sidebar = () => (
+  
   <aside className="sidebar">
     <div className="ec-logo-title">
         <a className="ec-logo" href="#">
@@ -27,15 +44,18 @@ const Sidebar = () => (
     <nav>
         <ul>
             <li className="active">Dashboard</li>
-            <li>Crear Nuevo Curso</li>
+            <li onClick={handleChange}>Crear Nuevo Curso</li>
             <li>Mis Cursos</li>
             <li>Salario</li>
             <li>Inbox</li>
         </ul>
     </nav>
     <footer>
+        <h2 className="ec-logo-text">SETTINGS</h2>
         <button className="settings">Settings</button>
-        <button className="logout">Logout</button>
+        <Link to="/">
+            <button className="logout">Logout</button>
+        </Link>
     </footer>
   </aside>
 );

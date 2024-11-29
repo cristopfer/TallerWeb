@@ -8,6 +8,17 @@
     display: flex;
     font-family: Arial, sans-serif;
   }
+
+  .register-button1 {
+    width: 100%;
+    padding: 10px;
+    background-color: #0a369d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
   
   .sidebar {
     width: 250px;

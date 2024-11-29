@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import logo from '../assets/images/LogoSin 1.svg';
 import facebookIcon from '../assets/images/Vector (1).svg';
@@ -20,13 +21,14 @@ function ECLogin() {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('/ingresarSistemaUsuario', credentials);
+      const response = await axios.post('http://localhost:8000/api/usuario/ingresar', credentials, {
+        withCredentials: true, 
+      });
       const { estado } = response.data;
-
       if (estado === 1) {
         window.location.href = '/buscador';
       } else if (estado === 2) {
-        window.location.href = '/menu-profesores';
+        window.location.href = '/profesor';
       } else {
         setError('Usuario o contraseña incorrectos');
       }
@@ -48,7 +50,9 @@ function ECLogin() {
           </a>
         </div>
         <nav className="ec-nav">
-          <a href="/register" className="ec-register-link">Registrarse</a>
+          <Link to="/registro">
+            <button>Registrarse</button>
+          </Link>
         </nav>
       </header>
 
