@@ -37,6 +37,8 @@ function handleDatosUsuario(req, res) {
         }
         const fila = respuesta.rows[0];
         global.idprofesor = fila.idpro;
+        global.idusuario = fila.idusu;
+        
         return res.status(200).json(fila);
     });
 }

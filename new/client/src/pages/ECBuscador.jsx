@@ -11,10 +11,29 @@ function Buscador() {
   const [estado, setEstado] = useState(null);
   const [consulta, setConsulta] = useState(null);
   const [selectedSection, setSelectedSection] = useState(null);
+  //const [calificar, setCalificar] = useState(null);
 
   const toggleModal = (index) => {
     setSelectedSection(index);
     setIsModalOpen(!isModalOpen);
+  };
+
+  const toggleCalificar = async (calificacion, id) => {
+    const valores = {idpro: id, valor: calificacion}
+    try {
+      const response = await axios.post('http://localhost:8000/api/profesor/calificarCurso', valores, {
+        withCredentials: true, 
+      });
+      const { estado } = response.data;
+      if (estado === 1) {
+        alert("Curso calificado"); 
+      } else {
+        alert("Curso calificado");
+      }
+    } catch (error) {
+      console.error('Error al iniciar sesión:', error);
+      setError('Hubo un problema al conectar con el servidor.');
+    }
   };
 
   useEffect(() => {
@@ -49,6 +68,20 @@ function Buscador() {
 
   const handleChange = () => {
     window.location.href = '/';
+  };
+
+  const handleComprar= async () => {
+    try {
+      const response = await axios.post('http://localhost:8000/api/profesor/comprarCurso', {
+        withCredentials: true, 
+      });
+      const { estado } = response.data;
+      if (estado === 1) {
+        alert("Acaba de comprar el curso");
+      }
+    } catch (error) {
+      console.error('Error al iniciar sesión:', error);
+    }
   };
 
 
@@ -95,14 +128,17 @@ function Buscador() {
                             {/* Primera columna */}
                             <div className="course-info1">
                                 <div>
-                                    <strong>Profesor:</strong> <span className="professor-name">{(consulta ? consulta[selectedSection].nomusu+" "+consulta[selectedSection].ape : 'Cargando...')}</span>
+                                    <strong>Profesor:</strong> <span className="professor-name">{(consulta ? consulta[selectedSection].nom+" "+consulta[selectedSection].ape : 'Cargando...')}</span>
                                 </div><br />
                                 <div>
                                     <strong>Descripción</strong><br />
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    {(consulta ? consulta[selectedSection].curs : 'Cargando...')}<br/>
+                                    {(consulta ? consulta[selectedSection].descrip : 'Cargando...')}
+                                    
                                 </div><br />
                                 <div>
-                                    <strong>Calificación</strong> <span>⭐⭐⭐⭐⭐</span>
+                                    <strong>Calificar</strong> <span onClick={() => toggleCalificar(20,(consulta ? consulta[selectedSection].idpro : 0))}>⭐</span><span onClick={() => toggleCalificar(40,(consulta ? consulta[selectedSection].idpro : 0))}>⭐</span><span onClick={() => toggleCalificar(60,(consulta ? consulta[selectedSection].idpro : 0))}>⭐</span><span onClick={() => toggleCalificar(80,(consulta ? consulta[selectedSection].idpro : 0))}>⭐</span><span onClick={() => toggleCalificar(100,(consulta ? consulta[selectedSection].idpro : 0))}>⭐</span><br />
+                                    <strong>Calificacion: {(consulta ? consulta[selectedSection].cali : 'Cargando...')}</strong><br />
                                 </div><br />
                                 <div>
                                     <strong>Precio</strong> S/50.00
@@ -115,7 +151,7 @@ function Buscador() {
                             </div>
                         </div> 
                         <p>
-                            <button className="buy-button">Comprar curso</button>
+                            <button className="buy-button" onClick={handleComprar}>Comprar curso</button>
                             <button className="close-button" onClick={toggleModal}>Cerrar</button>
                         </p>                      
                     </div>

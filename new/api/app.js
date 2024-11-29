@@ -8,6 +8,7 @@ const profesorRouters = require('./routes/profesorRouters');
 //const favoritosRoutes = require('./routes/favoritesRoutes');
 global.nombreusuario = "-";
 global.idprofesor = "-";
+global.idusuario = "-";
 
 const app = express();
 app.use(express.json());
