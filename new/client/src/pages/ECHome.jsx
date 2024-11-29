@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/styles/ECHome.css';
 import '../assets/styles/ECLogin.css';
+import '../assets/styles/ECRegistro.css';
 import logo from '../assets/images/LogoSin 1.svg';
 import excel from '../assets/images/excel.png';
 import profe1 from '../assets/images/profesor1.png';
@@ -23,7 +24,9 @@ const Home = () => {
           </a>
         </div>
         <div>
+        <Link to="/register">
           <button>Registrarse</button>
+          </Link>
           <Link to="/login">
             <button>Iniciar Sesión</button>
           </Link>
@@ -105,8 +108,8 @@ const Home = () => {
           <div className="footer-column">
             <h3>Desarrolladores</h3>
             <ul>
-              <li>Cosme Fulanito, Rolando Cecilia</li>
-              <li>Ernesto Ramírez, Jorge Ipanque</li>
+              <li>Rosmeri Gloria, Andrei Dinca</li>
+              <li>Annie Katerine...</li>
             </ul>
           </div>
           <div className="footer-column">

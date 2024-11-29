@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../assets/styles/ECRegistro.css';
 import logo from '../assets/images/LogoSin 1.svg';
 import facebookIcon from '../assets/images/Vector (1).svg';
 import githubIcon from '../assets/images/Vector (2).svg';
@@ -40,13 +41,15 @@ function ECLogin() {
     <div className="ec-login-container">
       <header className="ec-header">
         <div className="ec-logo-title">
-          <a className="ec-logo" href="#">
+          <a className="ec-logo" href="/">
             <div className="ec-logo-image">
               <img src={logo} alt="Logo EduConnect" />
             </div>
             <p className="ec-logo-text">EduConnect</p>
           </a>
         </div>
+        <p className="ec-p-text">Profesores</p>
+        <p className="ec-c-text">Cursos</p>
         <nav className="ec-nav">
           <a href="/register" className="ec-register-link">Registrarse</a>
         </nav>

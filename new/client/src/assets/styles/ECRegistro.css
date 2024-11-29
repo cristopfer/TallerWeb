@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.registration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f7fa;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Styles */
+.ec-header {
+    display: flex;
+    width: 90%;
+    background-color: #003366;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+}
+
+.ec-logo-title,
+.ec-logo {
+    display: flex;
+    align-items: center;
+}
+
+.ec-logo {
+    text-decoration: none;
+    color: #fff;
+}
+
+.ec-logo-image img {
+    height: 50px;
+    margin-right: 0.5rem;
+}
+
+.ec-logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.ec-homep-text,
+.ec-homec-text,
+.ec-nav{
+    display: flex;
+    align-items: center;
+}
+.ec-homep-text {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.ec-homec-text {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.ec-nav .ec-iniciarsesion-link {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #3869EB;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.ec-iniciarsesion-link:hover {
+    text-decoration: underline;
+}
+
+/* Registration Section Styles */
+.registration-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex-grow: 1;
+}
+.registration-panel-body {
+    flex: 2;  /* El formulario ocupa el doble de espacio que la imagen */
+    width: 100%;  /* Asegura que el cuerpo del formulario ocupe todo el espacio disponible */
+}
+
+.form-image {
+    flex: 1;  /* Asegura que la imagen ocupe una fracción del espacio disponible */
+    width: 120px;
+    height: auto;
+    background-color: #f4f4f4;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-image img {
+    width: 250%;   /* Ajusta el ancho de la imagen al 100% de su contenedor */
+    height: auto;  /* Mantiene la proporción original de la imagen */
+  }
+.registration-panel {
+    display: flex;
+    align-items: center;  /* Alinea verticalmente los elementos (si tienen diferentes alturas) */
+    justify-content: space-between;  /* Distribuye los elementos a lo largo del eje horizontal */
+    gap: 1rem;  /* Añade espacio entre la imagen y el formulario */
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1100px;
+}
+
+.registration-panel-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #003366;
+}
+
+.ec-panel-body-a,
+.ec-panel-body-b,
+.ec-panel-body-c {
+    display: inline-block;
+}
+
+/* Form Input Styles */
+.registration-panel-heading input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+.role-selection label {
+    display: inline-block;
+    margin-right: 1rem;
+    width: 10%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.registration-panel-heading:focus {
+    border-color: #003366;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 51, 102, 0.3);
+}
+
+/* Button Styles */
+.register-button {
+    width: 25%;
+    padding: 0.75rem;
+    background-color: #3869EB;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ec-login-button:hover {
+    background-color: #002244;
+}
+
+.terms {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.login-link {
+    text-align: center;
+    font-size: 1rem;
+}
+.ec-login-link, 
+.ec-privacy-link,
+.ec-terminos-link{
+    color: #ff8682;
+}
+/* Error Message Styles */
+.ec-error-message {
+    color: #ff4d4d;
+    background-color: #ffe6e6;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Footer Styles */
+.ec-footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.875rem;
+}
+
+.ec-footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.ec-footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ec-footer-section h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.ec-footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.ec-footer a:hover {
+    text-decoration: underline;
+}
+
+.ec-social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.ec-social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.ec-footer p {
+    margin-top: 1rem;
+}

@@ -1,16 +1,8 @@
 import React from 'react';
-<<<<<<< HEAD
-import ECLogin from './pages/ECLogin';
-
-function App() {
-  return (
-    <div className="App">
-      <ECLogin />
-    </div>
-=======
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ECLogin from './pages/ECLogin';
 import ECHome from './pages/ECHome';
+import ECRegistro from './pages/ECRegistro';
 
 function App() {
   return (
@@ -22,10 +14,12 @@ function App() {
           
           {/* Ruta para la página de login */}
           <Route path="/login" element={<ECLogin />} />
+
+          {/* Ruta para la página de Registro */}
+          <Route path="/register" element={<ECRegistro />} />
         </Routes>
       </div>
     </Router>
->>>>>>> eysenDev
   );
 }
 
