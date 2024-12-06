@@ -1,0 +1,47 @@
+version: '3.7'
+
+services:
+  # Contenedor para la base de datos PostgreSQL
+  db:
+    image: postgres:latest
+    container_name: test-postgres
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "${DB_PORT}:${DB_PORT}"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+  # Contenedor para la API de Node.js
+  api:
+    build:
+      context: .  # El contexto de construcción es la raíz, ya que el Dockerfile está en /api
+      dockerfile: api/Dockerfile  # Ruta al Dockerfile
+    container_name: myapp-container
+    environment:
+      DB_HOST: db
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_NAME: ${DB_NAME}
+      DB_PORT: ${DB_PORT}
+      SECRET_KEY: ${SECRET_KEY}
+    ports:
+      - "8095:8095"
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  # Si tienes un contenedor para el cliente, lo agregarías aquí también
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
