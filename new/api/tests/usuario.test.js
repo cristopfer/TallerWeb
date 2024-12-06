@@ -1,5 +1,5 @@
 const request = require('supertest');
-const {app, server} = require('../app'); // Asegúrate de que este es el archivo correcto
+const { app, server } = require('../app'); // Asegúrate de que este es el archivo correcto
 const { pool } = require('../database/database'); // Asegúrate de que este es el archivo correcto
 const { faker } = require('@faker-js/faker');
 
@@ -26,8 +26,8 @@ describe('Usuario API', () => {
         expect(response.body.estado).toBe(0); //estado 0 significa que el usuario no existe
     });
 
-    it ('should handle successful user login', async () => {
-        const usuario = { username: 'pedro', password: 'pedro' };
+    it('should handle successful user login', async () => {
+        const usuario = { username: 'admin', password: '123' };
         const response = await api
             .post('/api/usuario/ingresar')
             .send(usuario)
@@ -37,7 +37,7 @@ describe('Usuario API', () => {
         expect(response.body.estado).toBe(1); //estado 1 significa que el usuario existe
     });
 
-    it ('should handle succesful user registration', async () => {
+    it('should handle succesful user registration', async () => {
         const register_user = {
             username: faker.internet.userName(),
             password: faker.internet.password(),
@@ -56,7 +56,7 @@ describe('Usuario API', () => {
         expect(response.body.estado).toBe(0); //estado 0 significa que el usuario recien se ha registrado
     });
 
-    it ('should handle failed user registration', async () => {
+    it('should handle failed user registration', async () => {
         const register_user = {
             username: 'admin',
             password: 'adm',
@@ -75,9 +75,9 @@ describe('Usuario API', () => {
         expect(response.body.estado).toBe(1); //estado 1 significa que el usuario ya existe
     });
 
-    it ('should handle user data retrieval', async () => {
+    it('should handle user data retrieval', async () => {
 
-        const user = { nomusu: 'pedro' };
+        const user = { nomusu: 'admin' };
 
         const response = await api
             .post('/api/usuario/logueo')
