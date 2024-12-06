@@ -35,6 +35,9 @@ function handleDatosUsuario(req, res) {
             console.error("Error al registrar al usuario:", err.message);
             return res.status(500).json({ error: "Error interno del servidor" });
         }
+        if (!respuesta.rows || respuesta.rows.length === 0) {
+            return res.status(404).json({ error: "Usuario no encontrado" });
+        }
         const fila = respuesta.rows[0];
         global.idprofesor = fila.idpro;
         return res.status(200).json(fila);
