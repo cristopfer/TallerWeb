@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "test:frontend": "cd new/client && npm install && npm run test",
+    "test:backend": "cd new/api && npm install && npm run test",
+    "test": "npm run test:frontend && npm run test:backend"
+  }
+}
