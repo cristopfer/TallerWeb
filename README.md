@@ -41,8 +41,8 @@ npm install
 npm start
 ```
 
-### 🔥 Firebase
-To deploy in firebase, first build the project:
+### 🔥 BaseDatos
+Para implementar en PostgreSQL, primero cree el proyecto:
 ```bash
 npm run build
 ```
