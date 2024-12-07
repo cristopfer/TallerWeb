@@ -15,7 +15,7 @@
 <!-- Shields -->
 <p align="center">
   <!-- Node v18-->
-  <img src="https://img.shields.io/static/v1?label=NodeJS&message=v18.0&color=339933&logo=node.js" />
+  <img src="https://img.shields.io/static/v1?label=NodeJS&message=v18.0.0&color=339933&logo=node.js" />
   <!-- React -->
   <img src="https://img.shields.io/static/v1?label=React&message=v18.3.1&color=61DAFB&logo=react" />
 </p>
@@ -29,25 +29,28 @@
 
 
 ## 🚀 Implementación
-💻 Una vez que hayas clonado o descargado directamente este repositorio: abre dos terminales, una terminal para la carpeta de **client** y otra para **api**:
+💻 Una vez que hayas clonado o descargado directamente este repositorio: Abre dos terminales, una terminal para la carpeta de **client** y otra para **api**:
 
-📦 Install the dependencies **node_modules**
+📦 Install the dependencies: **node_modules**
 
 ```bash
 npm install
 ```
-🚀 En cada terminar aplicas: Levanta 2 localhost para el cliente y el api
+🚀 En cada terminal levantar 2 localhost para el cliente y el api
 ```bash
 npm start
 ```
---- ya corre 
-
 
 ### 🔥 Instalar BaseDatos: PostgreSQL
-Descargar la v14 del PostgreSQL e instalar
-levantar el pgadmin4
-crearmos una BD con el siguiente comado:
+🚀 Descargar la versión14 del PostgreSQL e instalar en tu máquina
+🚀 Levantar pgadmin4
+🚀 Crear una BD con el siguiente query
 ```bash
+<details>
+  <summary>Ver Query SQL</summary>
+
+```sql
+-- Aquí pega todo el código SQL
 CREATE TABLE usuario
 (
     idusuario serial primary key,
@@ -212,13 +215,17 @@ BEGIN
 RETURN 1;
 END;
 $BODY$;
-
+</details> 
 
 -- verificar el usuario admin
 
 
 
 
+🚀 Ejecutar el proyecto
+```bash
+npm run start
+```
 
 ```bash
 npm run build
