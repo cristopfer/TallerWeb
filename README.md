@@ -1,4 +1,4 @@
-<p align="center">
+<!-- <p align="center">
   <img
     src="https://asset.cloudinary.com/dkhvd9k6s/ead9ee2d34482074a86412d6ae2b4a64"
     align="center"
@@ -7,7 +7,8 @@
     title="EduConnect"
   />
   <h1 align="center">✏️ EduConnect ✏️</h1>
-</p>
+</p> -->
+<h1 align="center">✏️ EduConnect ✏️</h1>
 
 <p align="center">📚 Plataforma web que conecta estudiantes y profesores 👨‍🏫</p>
 
