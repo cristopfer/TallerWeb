@@ -46,11 +46,6 @@ npm start
 🚀 Levantar pgadmin4
 🚀 Crear una BD con el siguiente query
 ```bash
-<details>
-  <summary>Ver Query SQL</summary>
-
-```sql
--- Aquí pega todo el código SQL
 CREATE TABLE usuario
 (
     idusuario serial primary key,
@@ -215,32 +210,22 @@ BEGIN
 RETURN 1;
 END;
 $BODY$;
-</details> 
+```
 
--- verificar el usuario admin
-
-
-
-
+🚀 Verificar el usuario admin en la BD creada
 🚀 Ejecutar el proyecto
 ```bash
 npm run start
 ```
 
-```bash
-npm run build
-```
-Then deploy it with:
-```bash
-firebase deploy
-```
-
+### ✍ Interactuar 
+🚀 Registrarse en la plataforma y elige el tipo de usuario: Profesor o Alumno
 
 🎉 **¡Genial! Comience a usar EduConnect.**
 
 
 ## ✍ Developers
-Personas que contribuyeron al desarrollo del proyecto.
+Grupo 3:
 - Ccanto Flores, Rosmeri Gloria
 - Dinca Alexandru, Andrei
 - Espinola Ravello, Annie Katerine
