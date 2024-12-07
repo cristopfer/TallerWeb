@@ -15,9 +15,9 @@
 <!-- Shields -->
 <p align="center">
   <!-- Node v18-->
-  <img src="https://img.shields.io/static/v1?label=NodeJS&message=v11.14.0&color=339933&logo=node.js" />
+  <img src="https://img.shields.io/static/v1?label=NodeJS&message=v18.0&color=339933&logo=node.js" />
   <!-- React -->
-  <img src="https://img.shields.io/static/v1?label=React&message=v16.13&color=61DAFB&logo=react" />
+  <img src="https://img.shields.io/static/v1?label=React&message=v18.3.1&color=61DAFB&logo=react" />
 </p>
 
 <!--<img
